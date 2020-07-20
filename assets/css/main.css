@@ -1,0 +1,20 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu__items {
+    list-style: none;
+    padding:20px;
+    display:inline-block;
+}
+
+.menu__items li a {
+    color: black;
+    text-decoration: none;
+}
