@@ -6,15 +6,426 @@
 body {
     margin:0px;
     font-family: 'Montserrat', sans-serif;
+    color: grey;
 }
 
-.menu__items {
+header {
+    text-align: center;
+}
+
+header > a {
+    text-decoration: none;
+    color: black; 
+    font-size: 27px;
+}
+
+#green_dot, #home { /*volevo evidenziare la pagina in cui mi trovo, avevo capito si facesse con :active, ma in realtà evidenzia solo il link mentre tengo premuto il mouse*/
+    color: #00d2b5;
+}
+
+nav {
+    text-align: center;
+}
+
+nav .menu_items, .menu_items li {
     list-style: none;
     padding:20px;
     display:inline-block;
 }
 
-.menu__items li a {
+.menu_items li a {
+    text-decoration: none;
+    color: black; 
+    display:inline-block;
+}
+
+.menu_items a:hover {
+    color: #00d2b5;
+}
+
+.blocco_presentazione {
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    left: 5%;
+}
+
+h1 {
+    font-size: 60px;
     color: black;
+}
+
+.green_button {
+    text-decoration: none;
+    border: 2px solid #00d2b5;
+    border-radius: 22px;
+    background-color: #00d2b5;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: -15px;
+}
+
+.green_button:hover{
+    border: 2px solid #00d2b5;
+    border-radius: 22px;
+    background-color: white;
+    color: #00d2b5;
+}
+
+.blocco_futon {
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    right: -6%;
+}
+
+
+.blocco_futon img {
+    width: 100%;
+}    
+
+#blocco_features {
+    background-color: #f3f3f3;
+    width: 100%;
+    display: inline-block;   
+}
+
+#blocco_features h2 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.container_servizi {
+    display: inline-block;
+}
+
+.servizio {
+    background-color: white;
+    width: 25%;
+    padding: 18px;
+    padding-right: 40px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left: 9%;
+}
+
+h4 {
+    color: black;
+}
+
+.green_link a {
+    text-decoration: none;
+    color: #00d2b5;
+}
+
+.servizio .fa {
+    color: white;
+    padding: 10px;
+    background-color: #00d2b5;
+    border-radius: 22px;
+    font-size: 20px;
+}
+
+.prototypes {
+    max-width: 1110px;
+    margin: 5% auto;
+}
+
+.schede_orizzontali {
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    left: -4%;
+}
+
+.schede_orizzontali img {
+    width: 100%;
+}
+
+.check {
+    width: 39%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.check h2 {
+    font-size: 30px;
+    color: black;
+}
+
+.container_citazioni {
+    border: 1px solid #f3f3f3;
+    box-shadow: -6px 6px 4px #f3f3f3,
+                6px 0px 4px #f3f3f3;
+    border-radius: 2%;
+    padding: 5%;
+    margin-top: 10%;
+}
+
+.container_citazioni img {
+    border-radius: 50%;
+    width: 50px;
+    display: inline-block;
+    margin-right: 3%;
+    vertical-align: middle;
+}
+
+.check .citazione {
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+blockquote {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.check p.spunta {
+    vertical-align: middle;
+}
+
+.spunta::before {
+    font-family: "Wingdings";
+    content: "ü";
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 2%;
+}
+
+.schede_verticali {
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.schede_verticali img {
+    width: 100%;
+}
+
+#blocco_about_us {
+    background-color: #f3f3f3;
+    width: 100%;
+    display: inline-block;  
+    padding-bottom: 7%;
+}
+
+#blocco_about_us h2 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 2%;
+}
+
+.ragazzi {
+    width: 37%;
+    display: inline-block;
+    position: relative;
+    left: 13%;
+    
+}
+
+#blocco_about_us img {
+    width: 100%;
+    border-radius: 1%;
+    box-shadow: -6px 6px 4px #b3b3b3,
+                6px 0px 4px #b3b3b3;
+}
+
+.testo_ragazzi {
+    width: 29%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    right: -21%;
+}
+
+#blocco_about_us .testo_ragazzi h2 {
+    font-weight: normal;
+    margin: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+#blocco_testimonials {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 12%;
+}
+
+#blocco_testimonials h2 {
+    color: black;
+    font-size: 30px;
+    padding: 2%;
+}
+
+#blocco_testimonials img {
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: -6px 6px 4px #d4d4d4,
+                6px 0px 4px #d4d4d4;
+    position: relative;
+    vertical-align: top;
+    left: 25%;
+}
+
+.blockquote {
+    font-size: 20px;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: -110px;
+    left: -3%;
+}
+
+.blockquote p {
+    color: black;
+    font-size: 15px;
+}
+
+#blocco_testimonials .dots {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    bottom: -115px;
+    left: 9px;
+}
+
+#blocco_testimonials .dots .fa {
+    color: #d4d4d4;
+    padding: 4px;
+    border-radius: 22px;
+    font-size: 12px;
+}
+
+#blocco_testimonials .dots #green {
+    color: #00d2b5;
+}
+
+#blocco_blog_posts {
+    width: 100%;
+    display: inline-block;
+}
+
+#blocco_blog_posts h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#blocco_blog_posts .posts {
+    display: flex;
+    padding: 10px;
+    margin: auto 25px;
+}
+
+.post1 {
+    width: 70%;
+    margin: 10px;
+}
+
+#blocco_blog_posts .posts .post1 img {
+    width: 100%;
+}
+
+.post2 {
+    width: 70%;
+    margin: 10px;
+}
+
+#blocco_blog_posts .posts .post2 img {
+    width: 100%;
+}
+
+.post3 {
+    width: 70%;
+    margin: 10px;
+}
+
+#blocco_blog_posts .posts .post3 img {
+    width: 100%;
+}
+
+.posts h3 {
+    font-weight: normal;
+    font-size: 30px;
+    color: black;
+    margin: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+.posts h3 + p {
+    font-size: 12px;
+}
+
+.posts .green_link {
+    color: #00d2b5;
+    text-decoration: none;
+}
+
+#blocco_get_in_touch {
+    background-color: #f3f3f3;
+    width: 100%;
+    display: inline-block;  
+    padding-bottom: 7%;
+}
+
+#blocco_get_in_touch h2 {
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    padding: 2%;
+}
+
+#blocco_form {
+    background-color: white;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    left: 25%;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+.social {
+    margin: 3%;
+}
+
+.footer .social .fa {
+    color: #00d2b5;
+    padding: 5px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    margin-left: 28%;
+}
+
+.copyright .fa {
+    padding: 5px;
+}
+
+.copyright a {
+    color: #00d2b5;
     text-decoration: none;
 }
