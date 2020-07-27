@@ -484,7 +484,7 @@ blockquote {
 .copyright {
     display: flex;
     align-items: center;
-    margin-left: 28%;
+    margin-left: 27%;
 }
 
 .copyright .fa {
