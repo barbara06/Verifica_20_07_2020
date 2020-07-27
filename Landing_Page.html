@@ -15,7 +15,7 @@
             <a href="../Verifica_20_07_2020/Landing_Page.html">Landerz<strong id="green_dot">.</strong></a>
         </header>
         <!-- blocco menu -->
-        <nav>             
+        <nav class="blocco_menu">             
             <ul class="menu_items">
                 <li><a id="home" href="../Verifica_20_07_2020/Landing_Page.html">Home</a></li>
                 <li><a href="../Verifica_20_07_2020/Landing_Page.html#blocco_features">Features</a></li>
@@ -28,7 +28,7 @@
         <!-- blocco corpo landing page -->
         <div>            
             <!-- blocco content presentazione -->
-            <div class="content1">
+            <div>
                 <div class="blocco_presentazione">
                     <h1>Grow Your Business Faster</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
@@ -174,18 +174,24 @@
             <div id="blocco_get_in_touch">
                 <h2>Get In Touch</h2>
                 <div id="blocco_form">
-                    <form action="/action_page.php">
-                        <label for="fname">First Name</label><br>
-                        <input type="text" name="fname" required><br>
-                        <label for="lname">Last Name</label><br>
-                        <input type="text" name="lname" required><br>
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" required><br>
-                        <label for="fname">Subject</label><br>
-                        <input type="text" name="title" required><br>
-                        <textarea name="message" rows="10" cols="50" placeholder="Write your notes or questions here..."></textarea><br>
-                        <input class="green_button" type="submit" value="Send Message">
-                    </form>
+                    <div class="contact_us">
+                        <form action="/action_page.php">
+                            <div class="contact">
+                                <label for="fname">First Name</label><br>
+                                <input class="box_form" type="text" name="fname" required>
+                            </div>
+                            <div class="contact">
+                                <label for="lname">Last Name</label><br>
+                                <input class="box_form" type="text" name="lname" required>
+                            </div>
+                            <label for="email">Email</label><br>
+                            <input class="box_form" type="email" name="email" required><br>
+                            <label for="fname">Subject</label><br>
+                            <input class="box_form" type="text" name="title" required><br>
+                            <textarea name="message" rows="10" cols="50" placeholder="Write your notes or questions here..."></textarea><br>
+                            <input class="green_button" type="submit" value="Send Message">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

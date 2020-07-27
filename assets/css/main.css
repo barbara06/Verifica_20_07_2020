@@ -19,17 +19,23 @@ header > a {
     font-size: 27px;
 }
 
-#green_dot, #home { /*volevo evidenziare la pagina in cui mi trovo, avevo capito si facesse con :active, ma in realtà evidenzia solo il link mentre tengo premuto il mouse*/
+#green_dot, #home { /* volevo evidenziare la pagina in cui mi trovo, avevo capito si facesse con :active, ma in realtà evidenzia solo il link mentre tengo premuto il mouse, anche gli esempi del w3schools mi danno lo stesso risultato. Ci guarderò con calma nel tempo libero */
     color: #00d2b5;
 }
 
-nav {
+.blocco_menu {
+    background-color: white;
     text-align: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
 nav .menu_items, .menu_items li {
     list-style: none;
     padding:20px;
+    padding-bottom: 15px;
+    margin: 0;
     display:inline-block;
 }
 
@@ -68,7 +74,7 @@ h1 {
     bottom: -15px;
 }
 
-.green_button:hover{
+.green_button:hover {
     border: 2px solid #00d2b5;
     border-radius: 22px;
     background-color: white;
@@ -98,6 +104,7 @@ h1 {
     text-align: center;
     font-size: 30px;
     color: black;
+    padding: 5%;
 }
 
 .container_servizi {
@@ -224,7 +231,7 @@ blockquote {
     text-align: center;
     font-size: 30px;
     color: black;
-    padding: 2%;
+    padding: 5%;
 }
 
 .ragazzi {
@@ -267,7 +274,7 @@ blockquote {
 #blocco_testimonials h2 {
     color: black;
     font-size: 30px;
-    padding: 2%;
+    padding: 5%;
 }
 
 #blocco_testimonials img {
@@ -322,7 +329,7 @@ blockquote {
     color: black;
     font-size: 30px;
     text-align: center;
-    padding-bottom: 5%;
+    padding: 5%;
 }
 
 #blocco_blog_posts .posts {
@@ -384,16 +391,73 @@ blockquote {
 }
 
 #blocco_get_in_touch h2 {
-    width: 100%;
     color: black;
     text-align: center;
     font-size: 30px;
-    padding: 2%;
+    padding: 5%;
 }
 
 #blocco_form {
     background-color: white;
     width: 50%;
+    display: inline-block;
+    position: relative;
+    left: 25%;
+    padding: 3%;
+}
+
+#blocco_form label {
+    padding: 1%;
+    color: black;
+}
+
+#blocco_form .box_form {
+    padding: 8px;
+    margin: 1%;
+    border-color: #b3b3b3;
+    border-width: thin;
+    border-style: solid;
+    width: 95%;
+}
+
+#blocco_form .box_form:focus {
+    outline-width: thin;
+    outline-color: #00d2b5;
+    outline-style: solid;
+}
+
+#blocco_form .contact input {
+    width: 100%;
+}
+
+.contact_us textarea {
+    padding: 8px;
+    margin: 1%;
+    border-color: #b3b3b3;
+    border-width: thin;
+    border-style: solid;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.contact_us textarea:focus {
+    outline-width: thin;
+    outline-color: #00d2b5;
+    outline-style: solid;
+}
+
+#blocco_form .contact_us {
+    display: flex;
+}
+
+#blocco_form .contact_us .contact {
+    display: inline-block;
+    position: relative;
+    left: 3px;
+    padding-right: 15px;
+}
+
+.contact_us form {
     display: inline-block;
     position: relative;
     left: 25%;
@@ -403,7 +467,9 @@ blockquote {
     width: 100%;
     text-align: center;
     display: inline-block;
+    position: relative;
     margin-bottom: 2%;
+    left: 7%;
 }
 
 .social {
